@@ -8,11 +8,12 @@ const { data: movies } = await useFetch("/tmdb/tv/popular", {
   },
 });
 
+// Used useState as data is shared accoss pages
 const active = useState();
 </script>
 
 <template>
-  <section class="grid grid-cols-4 md:grid-cols-6 gap-1">
+  <section class="grid grid-cols-4 md:grid-cols-6 gap-4">
     <article v-for="movie in movies.results">
       <NuxtLink :to="`/movie/${movie.id}`" @click.native="active = movie.id">
         <NuxtImg
@@ -22,7 +23,7 @@ const active = useState();
           format="webp"
           :src="`/tmdb${movie.poster_path}`"
           :alt="movie.title || movie.name"
-          class="w-full h-full object-cover rounded"
+          class="w-full h-full object-cover rounded hover:scale-[1.03] transition ease-in duration-300"
           :class="{ active: active === movie.id }"
         />
       </NuxtLink>

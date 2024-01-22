@@ -1,4 +1,16 @@
-# Nuxt 3 Minimal Starter
+# nuxt-view-transition
+
+View transition API: an exciting new way to implement native browser transitions which (among other things) have the ability to transition between unrelated elements on different pages.
+
+[Live Demo](https://nuxt-view-transition.vercel.app/)
+
+## Reference
+
+[Nuxt: View Transition API](https://nuxt.com/docs/getting-started/transitions#view-transitions-api-experimental)
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)
+
+[Chrome Article](https://developer.chrome.com/docs/web-platform/view-transitions)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -73,4 +85,3 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# nuxt-view-transition
